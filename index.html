@@ -1,372 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Nour Muhammad Mahmoud - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Website</title>
   </head>
   <body>
     <header>
+
+      <div class="logo">Nour</div>
       <nav>
-        <ul>
-          <li>
-            <img
-              src="D:\GitHub\Own-Portfolio-Site\nour.jpg"
-              alt="Nour Muhammad Mahmoud"
-              class="nav-profile-image"
-            />
-            <b class="nav-profile-text">Nour Muhammad</b>
-          </li>
-          <div class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </div>
-        </ul>
-      </nav>
+  <a href="#home" class="active">Home</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+</nav>
     </header>
+    <section class="home" id="home">
+      <div class="home-img">
+        <img src="nour.jpg" alt="" />
+      </div>
+      <div class="home-content">
+        <h1>Hi, It's <span>Nour</span></h1>
+        <h3 class="typing-text">I'm a <span></span></h3>
+        <p>
+          passionate software developer with experience in building web
+          applications. 
+        </p>
+        <div class="social-icons">
+          <a
+            href="mailto:nouramer725@gmail.com"
+            class="icon email"
+            title="Email"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
 
-    <section id="about" class="about-section">
-      <h1>About Me</h1>
-      <div class="about-content">
-        <div class="about-text">
-          <p>
-            I'm a passionate <strong>Mobile Developer</strong> skilled in
-            building cross-platform apps using <strong>Flutter</strong> and
-            <strong>Firebase</strong>. I specialize in clean architecture, REST
-            API integration, and effective state management (BLoC, Cubit,
-            Provider).
-          </p>
-          <p>
-            I love creating user-friendly, scalable apps and fostering learning
-            through gamified and community-based solutions. I'm also proud of my
-            leadership in team projects and developer training.
-          </p>
-        </div>
-        <div class="about-image">
-          <img
-            src="D:\GitHub\Own-Portfolio-Site\nour.jpg"
-            alt="Nour Muhammad Mahmoud"
-            class="profile-image"
-          />
+          <a
+            href="https://www.linkedin.com/in/nour-muhammad-mahmoud-421921243/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/nouramer725" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/nour_mohamed04/"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/nour.mohamed.104"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="projects-section">
-      <center><h1>Projects</h1></center>
+    <!-- Skills Section -->
+<section id="skills" class="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-container">
+    <h3>Technical Skills</h3>
+    <ul>
+      <li>Dart, Flutter, Firebase, Firestore</li>
+      <li>BLoC, Cubit, Provider (State Management)</li>
+      <li>REST APIs, Cloudinary, SQLite, Shared Preferences</li>
+      <li>React.js, JavaScript, Tailwind CSS</li>
+      <li>Database Administration, JDBC</li>
+      <li>Networking, Cybersecurity, Cloud Security</li>
+      <li>Version Control (Git), Testing & Debugging</li>
+    </ul>
 
-      <center><h2>Mobile Projects</h2></center>
-      <div class="project-container">
-        <a
-          href="https://github.com/nouramer725/Servix"
-          target="_blank"
-          class="project-link"
-        >
-          <div class="project-card" data-aos="fade-up">
-            <img
-              src="D:\GitHub\Own-Portfolio-Site\servix.png"
-              alt="Servix App"
-            />
-            <div class="project-info">
-              <h3>Servix App</h3>
-              <p>
-                A full-featured home services app for clients and technicians.
-              </p>
-              <span>Dart · Updated: Jun 20</span>
-            </div>
-          </div>
-        </a>
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Problem-solving & Critical Thinking</li>
+      <li>Team Collaboration & Communication</li>
+      <li>Leadership under Pressure</li>
+      <li>Adaptability & Growth Mindset</li>
+      <li>Creativity & Attention to Detail</li>
+      <li>Time Management & Organization</li>
+      
+    </ul>
+  </div>
+</section>
 
-        <a
-          href="https://github.com/nouramer725/Weather-App"
-          target="_blank"
-          class="project-link"
-        >
-          <div class="project-card" data-aos="fade-up">
-            <img
-              src="D:\GitHub\Own-Portfolio-Site\OIP.webp"
-              alt="Weather App"
-            />
-            <div class="project-info">
-              <h3>Weather App</h3>
-              <p>Provides weather forecasts and current conditions.</p>
-              <span>Dart · Updated: Jan 28</span>
-            </div>
-          </div>
-        </a>
+<!-- Experience Section -->
+<section id="experience" class="experience">
+  <h2 class="section-title">Experience</h2>
 
-        <a
-          href="https://github.com/nouramer725/Random-Quote-Generator"
-          target="_blank"
-          class="project-link"
-        >
-          <div class="project-card" data-aos="fade-up">
-            <img
-              src="D:\GitHub\Own-Portfolio-Site\OIP.webp"
-              alt="Random Quote Generator"
-            />
-            <div class="project-info">
-              <h3>Random Quote Generator</h3>
-              <p>Generates random motivational quotes with likes and shares.</p>
-              <span>Dart · Updated: Oct 30, 2024</span>
-            </div>
-          </div>
-        </a>
+  <div class="exp-box">
+    <h3>Coding Instructor – iSchool</h3>
+    <p>Jul 2025 – Present</p>
+    <p>
+      Full-time coding instructor teaching programming concepts, web development,
+      and app development to students of different age groups. Designed engaging 
+      lessons, guided projects, and supported learners in building problem-solving 
+      and computational thinking skills.
+    </p>
+  </div>
+  
+  <div class="exp-box">
+    <h3>Flutter Development Intern – CodeAlpha</h3>
+    <p>Jul 2024 – Jul 2024</p>
+    <p>
+      Contributed to multiple Flutter projects. Strengthened API integration,
+      state management, and UI/UX design. Awarded a certificate and letter of
+      recommendation.
+    </p>
+  </div>
 
-        <a
-          href="https://github.com/nouramer725/To-Do-Application"
-          target="_blank"
-          class="project-link"
-        >
-          <div class="project-card" data-aos="fade-up">
-            <img
-              src="D:\GitHub\Own-Portfolio-Site\OIP.webp"
-              alt="To-Do Application"
-            />
-            <div class="project-info">
-              <h3>To-Do Application</h3>
-              <p>Manage tasks with create/edit/delete features.</p>
-              <span>Dart · Updated: Oct 30, 2024</span>
-            </div>
-          </div>
-        </a>
+  <div class="exp-box">
+    <h3>Front-End Web Developer – Semi Colon</h3>
+    <p>Sep 2024 – Oct 2024</p>
+    <p>
+      Led a front-end team building responsive apps with React, Tailwind, and
+      JavaScript. Delivered training and earned Best Member & Team awards.
+    </p>
+  </div>
 
-        <a
-          href="https://github.com/nouramer725/Shopping-Application"
-          target="_blank"
-          class="project-link"
-        >
-          <div class="project-card" data-aos="fade-up">
-            <img
-              src="D:\GitHub\Own-Portfolio-Site\OIP.webp"
-              alt="Shopping Application"
-            />
-            <div class="project-info">
-              <h3>Shopping Application</h3>
-              <p>Browse products, add to cart, and make purchases.</p>
-              <span>Dart · Updated: Oct 30, 2024</span>
-            </div>
-          </div>
-        </a>
+  <div class="exp-box">
+    <h3>Networking & Cybersecurity Intern – Ethydco</h3>
+    <p>Sep 2024</p>
+    <p>
+      Worked on network setup, firewalls, cloud security, and database
+      administration. Learned mobile app security practices.
+    </p>
+  </div>
+</section>
 
-        <a
-          href="https://github.com/nouramer725/Bmi-Calculator"
-          class="project-link"
-        >
-          <div class="project-card" data-aos="fade-up">
-            <img
-              src="D:\GitHub\Own-Portfolio-Site\OIP.webp"
-              alt="BMI Calculator"
-            />
-            <div class="project-info">
-              <h3>BMI Calculator</h3>
-              <p>Calculates BMI based on user height and weight.</p>
-              <span>Dart · Updated: Oct 30, 2024</span>
-            </div>
-          </div>
-        </a>
+<!-- Projects Section -->
+<section id="projects" class="projects">
+  <h2 class="section-title">Projects</h2>
 
-        <a
-          href="https://github.com/nouramer725/FlashCard_Quiz-Application"
-          target="_blank"
-          class="project-link"
-        >
-          <div class="project-card" data-aos="fade-up">
-            <img
-              src="D:\GitHub\Own-Portfolio-Site\OIP.webp"
-              alt="FlashCard Quiz App"
-            />
-            <div class="project-info">
-              <h3>FlashCard Quiz App</h3>
-              <p>Interactive flashcard quizzes to help learn new topics.</p>
-              <span>Dart · Updated: Oct 27, 2024</span>
-            </div>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/nouramer725/Language-Learning-Application"
-          target="_blank"
-          class="project-link"
-        >
-          <div class="project-card" data-aos="fade-up">
-            <img
-              src="D:\GitHub\Own-Portfolio-Site\OIP.webp"
-              alt="Language Learning App"
-            />
-            <div class="project-info">
-              <h3>Language Learning App</h3>
-              <p>Learn new languages through various fun exercises.</p>
-              <span>Dart · Updated: Oct 27, 2024</span>
-            </div>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/nouramer725/News-Application"
-          target="_blank"
-          class="project-link"
-        >
-          <div class="project-card" data-aos="fade-up">
-            <img
-              src="D:\GitHub\Own-Portfolio-Site\OIP.webp"
-              alt="News Application"
-            />
-            <div class="project-info">
-              <h3>News Application</h3>
-              <p>Latest articles and breaking news from multiple sources.</p>
-              <span>Dart · Updated: Sep 7, 2024</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <center><h2>Web Projects</h2></center>
-      <div class="project-container">
-        <a
-          href="https://github.com/nouramer725/Image-Gallery"
-          target="_blank"
-          class="project-link"
-        >
-          <div class="project-card" data-aos="fade-up">
-            <img
-              src="D:\GitHub\Own-Portfolio-Site\OIP.webp"
-              alt="Image Gallery"
-            />
-            <div class="project-info">
-              <h3>Image Gallery</h3>
-              <p>Responsive gallery with CSS grid and hover zoom.</p>
-              <span>HTML/CSS/JS · Updated: 2 days ago</span>
-            </div>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/nouramer725/Calculator"
-          target="_blank"
-          class="project-link"
-        >
-          <div class="project-card" data-aos="fade-up">
-            <img src="D:\GitHub\Own-Portfolio-Site\OIP.webp" alt="Calculator" />
-            <div class="project-info">
-              <h3>Calculator</h3>
-              <p>Basic arithmetic calculator with clean design.</p>
-              <span>HTML/CSS/JS · Updated: 4 days ago</span>
-            </div>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/nouramer725/Dashboard-React"
-          target="_blank"
-          class="project-link"
-        >
-          <div class="project-card" data-aos="fade-up">
-            <img
-              src="D:\GitHub\Own-Portfolio-Site\OIP.webp"
-              alt="Dashboard-React"
-            />
-            <div class="project-info">
-              <h3>Dashboard React</h3>
-              <p>
-                Interactive admin dashboard built with React and Chart.js for
-                visualizing data.
-              </p>
-              <span>React · Updated on May 26, 2024 </span>
-            </div>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/nouramer725/Own-Portfolio-Site"
-          target="_blank"
-          class="project-link"
-        >
-          <div class="project-card" data-aos="fade-up">
-            <img
-              src="D:\GitHub\Own-Portfolio-Site\OIP.webp"
-              alt="Dashboard-React"
-            />
-            <div class="project-info">
-              <h3>Own Portfolio Site</h3>
-              <p>
-                Own-Portfolio-Site is my personal interactive portfolio website.
-              </p>
-              <span>HTML/CSS/JS · Updated on May 26, 2024 </span>
-            </div>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section id="resume" class="resume-section">
-      <h1>Resume</h1>
-      <p class="resume-text">
-        Download my resume to learn more about my education and professional
-        experience.
+  <div class="projects-container">
+    <!-- Graduation Project -->
+    <div class="project-box">
+      <h3>Servix App (Graduation Project)</h3>
+      <p>
+        Home services app with booking, real-time tracking, role-based access,
+        multilingual UI, and Firebase integration.
       </p>
-      <a
-        href="D:\GitHub\Own-Portfolio-Site\cv nour amer.pdf"
-        target="_blank"
-        class="resume-link"
-        download
-      >
-        <i class="fas fa-file-download"></i> Download Resume
-      </a>
-    </section>
+      <a href="https://github.com/nouramer725/Servix" target="_blank" class="btn-explore">Explore</a>
+    </div>
 
-    <section id="contact" class="contact-section">
-      <h1>Contact Me</h1>
-      <div class="contact-icons">
-        <a href="mailto:nouramer725@gmail.com" class="icon email" title="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a
-          href="https://github.com/nouramer725"
-          class="icon github"
-          title="GitHub"
-          target="_blank"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://www.facebook.com/nour.mohamed.amer.441076"
-          class="icon facebook"
-          title="Facebook"
-          target="_blank"
-        >
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/nour_mohamed04/"
-          class="icon instagram"
-          title="Instagram"
-          target="_blank"
-        >
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/nour-muhammad-mahmoud-421921243/"
-          class="icon linkedin"
-          title="LinkedIn"
-          target="_blank"
-        >
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </div>
-    </section>
+    <!-- Mobile Projects -->
+    <div class="project-box">
+      <h3>Weather App</h3>
+      <p>Provides weather forecasts and current conditions with clean UI.</p>
+      <a href="https://github.com/nouramer725/Weather-App" target="_blank" class="btn-explore">Explore</a>
+    </div>
+
+    <div class="project-box">
+      <h3>Random Quote Generator</h3>
+      <p>Generates motivational quotes with like/share features.</p>
+      <a href="https://github.com/nouramer725/Random-Quote-Generator" target="_blank" class="btn-explore">Explore</a>
+    </div>
+
+    <div class="project-box">
+      <h3>To-Do Application</h3>
+      <p>Manage tasks with create, edit, and delete functionalities.</p>
+      <a href="https://github.com/nouramer725/To-Do-Application" target="_blank" class="btn-explore">Explore</a>
+    </div>
+
+    <div class="project-box">
+      <h3>Shopping App</h3>
+      <p>Browse products, add to cart, and manage profiles using REST API + Cubit.</p>
+      <a href="https://github.com/nouramer725/Shopping-Application" target="_blank" class="btn-explore">Explore</a>
+    </div>
+
+    <div class="project-box">
+      <h3>BMI Calculator</h3>
+      <p>Calculates Body Mass Index based on height and weight input.</p>
+      <a href="https://github.com/nouramer725/Bmi-Calculator" target="_blank" class="btn-explore">Explore</a>
+    </div>
+
+    <div class="project-box">
+      <h3>FlashCard Quiz App</h3>
+      <p>Interactive flashcard quizzes to enhance learning through practice.</p>
+      <a href="https://github.com/nouramer725/FlashCard_Quiz-Application" target="_blank" class="btn-explore">Explore</a>
+    </div>
+
+    <div class="project-box">
+      <h3>Korean Language Learning App</h3>
+      <p>Gamified platform with lessons, quizzes, games, and community features.</p>
+      <a href="https://github.com/nouramer725/Language-Learning-Application" target="_blank" class="btn-explore">Explore</a>
+    </div>
+
+    <div class="project-box">
+      <h3>News Application</h3>
+      <p>Fetches latest articles and breaking news from multiple sources.</p>
+      <a href="https://github.com/nouramer725/News-Application" target="_blank" class="btn-explore">Explore</a>
+    </div>
+
+    <!-- Web Projects -->
+    <div class="project-box">
+      <h3>Image Gallery</h3>
+      <p>Responsive gallery with CSS grid, hover zoom, and filtering.</p>
+      <a href="https://github.com/nouramer725/Image-Gallery" target="_blank" class="btn-explore">Explore</a>
+    </div>
+
+    <div class="project-box">
+      <h3>Calculator</h3>
+      <p>Simple arithmetic calculator with clean design.</p>
+      <a href="https://github.com/nouramer725/Calculator" target="_blank" class="btn-explore">Explore</a>
+    </div>
+
+    <div class="project-box">
+      <h3>Dashboard React</h3>
+      <p>Interactive admin dashboard built with React and Chart.js for data visualization.</p>
+      <a href="https://github.com/nouramer725/Dashboard-React" target="_blank" class="btn-explore">Explore</a>
+    </div>
+
+    <div class="project-box">
+      <h3>Portfolio Website</h3>
+      <p>Personal interactive portfolio website showcasing skills and projects.</p>
+      <a href="https://github.com/nouramer725/Own-Portfolio-Site" target="_blank" class="btn-explore">Explore</a>
+    </div>
+  </div>
+</section>
 
     <footer>
       <p>&copy; 2025 Nour Muhammad Mahmoud</p>
     </footer>
-
-    <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({ duration: 800, once: true });
